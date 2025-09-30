@@ -19,8 +19,8 @@ import com.revrobotics.spark.SparkMax;
  * this project, you must also update the manifest file in the resource directory.
  */
 public class Robot extends TimedRobot {
-  private final SparkMax m_leftDrive = new SparkMax(2, SparkLowLevel.MotorType.kBrushless);
-  private final SparkMax m_rightDrive = new SparkMax(4, SparkLowLevel.MotorType.kBrushless);
+  private final SparkMax m_leftDrive = new SparkMax(1, SparkLowLevel.MotorType.kBrushless);
+  private final SparkMax m_rightDrive = new SparkMax(3, SparkLowLevel.MotorType.kBrushless);
   private final DifferentialDrive m_robotDrive =
       new DifferentialDrive(m_leftDrive::set, m_rightDrive::set);
   private final XboxController m_controller = new XboxController(0);
